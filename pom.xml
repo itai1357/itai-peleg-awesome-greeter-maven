@@ -38,5 +38,18 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>secengsca-artifactory-primary-0-releases</name>
+        <url>https://secengsca.jfrog.io/artifactory/sca-goat-maven-local</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>secengsca-artifactory-primary-0-snapshots</name>
+        <url>https://secengsca.jfrog.io/artifactory/sca-goat-maven-local</url>
+    </snapshotRepository>
+    </distributionManagement>
 </project>
 
