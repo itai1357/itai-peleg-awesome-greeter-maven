@@ -6,7 +6,7 @@
     <groupId>itai.peleg</groupId>
     <artifactId>awesome-greeter-maven</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -38,18 +38,30 @@
             </plugin>
         </plugins>
     </build>
-
+    <dependencies>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
     <distributionManagement>
-    <repository>
-        <id>central</id>
-        <name>secengsca-artifactory-primary-0-releases</name>
-        <url>https://secengsca.jfrog.io/artifactory/sca-goat-maven-local</url>
-    </repository>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>secengsca-artifactory-primary-0-snapshots</name>
-        <url>https://secengsca.jfrog.io/artifactory/sca-goat-maven-local</url>
-    </snapshotRepository>
+        <repository>
+            <id>central</id>
+            <name>secengsca-artifactory-primary-0-releases</name>
+            <url>https://secengsca.jfrog.io/artifactory/sca-goat-maven-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>secengsca-artifactory-primary-0-snapshots</name>
+            <url>https://secengsca.jfrog.io/artifactory/sca-goat-maven-local</url>
+        </snapshotRepository>
     </distributionManagement>
 </project>
 
