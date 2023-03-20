@@ -6,7 +6,7 @@
     <groupId>itai.peleg</groupId>
     <artifactId>awesome-greeter-maven</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.2</version>
+    <version>1.0.6</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
